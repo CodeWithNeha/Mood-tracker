@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/nav_graph"
+	app:startDestination="@id/mainFragment">
+
+	<fragment
+		android:id="@+id/mainFragment"
+		android:name="com.example.moodtracker.MainFragment"
+		android:label="fragment_main"
+		tools:layout="@layout/fragment_main" >
+		<action
+			android:id="@+id/action_mainFragment_to_moodTestOnboardingFragment"
+			app:destination="@id/moodTestOnboardingFragment" />
+	</fragment>
+	<fragment
+		android:id="@+id/moodTestOnboardingFragment"
+		android:name="com.example.moodtracker.moodtest.MoodTestOnboardingFragment"
+		android:label="fragment_mood_test_onboarding"
+		tools:layout="@layout/fragment_mood_test_onboarding" >
+		<action
+			android:id="@+id/action_moodTestOnboardingFragment_to_moodTestQuestionsFragment"
+			app:destination="@id/moodTestQuestionsFragment" />
+	</fragment>
+	<fragment
+		android:id="@+id/moodTestQuestionsFragment"
+		android:name="com.example.moodtracker.moodtest.MoodTestQuestionsFragment"
+		android:label="fragment_mood_test_questions"
+		tools:layout="@layout/fragment_mood_test_questions" >
+		<action
+			android:id="@+id/action_moodTestQuestionsFragment_to_resultFragment"
+			app:destination="@id/resultFragment" />
+	</fragment>
+	<fragment
+		android:id="@+id/resultFragment"
+		android:name="com.example.moodtracker.resultFragment"
+		android:label="fragment_result"
+		tools:layout="@layout/fragment_result" >
+		<argument
+			android:name="happinessCount"
+			app:argType="integer"
+			android:defaultValue="0" />
+	</fragment>
+</navigation>

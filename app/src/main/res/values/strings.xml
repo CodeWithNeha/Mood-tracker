@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MoodTracker</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mood_test_question_one">Over the last two weeks, have you felt less interest and pleasure in doing things you normally would have enjoyed?</string>
+    <string name="mood_test_question_two">Do you often worry about how you look, your weight, or your figure?</string>
+    <string name="mood_test_question_three">Are there any particular objects or situations you are intensely afraid of, such as the sight of blood or a certain insect or animal, or flying in a plane?</string>
+    <string name="mood_test_question_four">Do you often worry about what or how much you eat</string>
+    <string name="mood_test_question_five">Do you often worry about various things even when there\'s no particular reason for doing so?</string>
+
+    <string name="mood_test_result_zero">Please Immediately Consult a therapist</string>
+    <string name="mood_test_result_one">you seem to be quite sad, please consult a therapist</string>
+    <string name="mood_test_result_two">you seem slightly sad, see if workout and leisure activities help, or would need to consult therapist</string>
+    <string name="mood_test_result_three">you can try spending more time with loved ones, workout, doing good</string>
+    <string name="mood_test_result_four">you are doing good, try to take less stress of work or studies</string>
+    <string name="mood_test_result_five">you are doing well in your life, and is happy, content and joyful</string>
+
+    <string name="btn_yes">Yes</string>
+    <string name="btn_no">No</string>
+</resources>
